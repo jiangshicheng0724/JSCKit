@@ -1,0 +1,6 @@
+framework module Pods_SNewRetailCliend {
+  umbrella header "Pods-SNewRetailCliend-umbrella.h"
+
+  export *
+  module * { export * }
+}

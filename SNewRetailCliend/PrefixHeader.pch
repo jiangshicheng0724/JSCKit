@@ -1,0 +1,93 @@
+//
+//  PrefixHeader.pch
+//  SNewRetailCliend
+//
+//  Created by zuosen on 2019/4/27.
+//  Copyright © 2019 jsc. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import <Masonry.h>
+#import <MJExtension.h>
+#import "NSObject+MJKeyValue.h"
+#import "BlocksKit.h"
+#import "BlocksKit+MessageUI.h"
+#import "BlocksKit+UIKit.h"
+#import "UIImageView+WebCache.h"
+#import "CommonMacro.h"
+
+#import "UIImageView+RYImageView.h"
+#import "UIView+WZExtension.h"
+#import "UIButton+RYExtensions.h"
+#import "ZSHTTPRequest.h"
+#import "UIView+Toast.h"
+#import "UIView+Alert.h"
+#import "UIImage+RYImage.h"
+#import "UILabel+RYLabel.h"
+#import "MOFSPickerManager.h"
+#import "HHRefreshFooter.h"
+#import "HHRefreshHeader.h"
+#import "NSString+MLSTextSize.h"
+#import "UIView+RYTool.h"
+#import "RYToolClass.h"
+#import <ReactiveObjC.h>
+#import "SVProgressHUD.h"
+#import "NSObject+RYTool.h"
+
+#import "PCIAccount.h"
+#import "PCISave.h"
+
+
+
+#define XMGAFNWriteToPlist(filename) [responseObject writeToFile:[NSString stringWithFormat:@"/Users/xiaomage/Desktop/%@.plist", @#filename] atomically:YES];
+
+//分割线颜色
+#define SeparatorCOLOR                          [RYToolClass getColorWithHexString:@"#dddddd"]
+
+#define TableColor                              [RYToolClass getColorWithHexString:@"#F5F5F5"]
+//主题色
+#define ThemeColor                              [RYToolClass getColorWithHexString:@"#309CF5"]
+#define ClearColor                              [UIColor clearColor]
+#define WhiteColor                              [UIColor whiteColor]
+#define YellowColor                             [RYToolClass getColorWithHexString:@"#FED452"]
+#define RedColor                                [RYToolClass getColorWithHexString:@"#F0250F"]
+
+#define FirstColor                              [RYToolClass getColorWithHexString:@"333333"]   //一级标题颜色
+#define SecondColor                             [RYToolClass getColorWithHexString:@"666666"]  //二级标题颜色
+#define ThirdColor                              [RYToolClass getColorWithHexString:@"999999"]   //三级标题颜色
+
+/*----------------占位图------------------------------------------------*/
+#define AvatarPlaceholderImage                  [UIImage imageNamed:@"661548728114_.pic_hd.jpg"]//头像占位图
+#define PLACEHOLDERGOODSIMAGE                   [UIImage imageNamed:@"8781548747756_.pic_hd.jpg"]
+#define BannarPlaceholderImage                  [UIImage imageNamed:@"8781548747756_.pic_hd.jpg"]
+
+///------ Ratio(Point)基于iPhone6 ------
+#define kRatioX6 ([UIScreen mainScreen].bounds.size.width / 375.)
+#define kRatioY6 ([UIScreen mainScreen].bounds.size.height / 667.)
+
+#define NumPerPage @"10" //分页数据，每页的数量
+// 字体
+#define kFont(x) [UIFont fontWithName:@"PingFang-SC-Medium"size:x*kRatioX6]
+// 字体中等
+#define WZFont(x) [UIFont fontWithName:@"PingFang-SC-Medium" size:x]
+// 字体加粗
+#define WZBFont(x) [UIFont fontWithName:@"PingFang-SC-Bold" size:x]
+// 字体默认
+#define WZRFont(x) [UIFont systemFontOfSize:x]
+
+
+#define UserDefaults ([NSUserDefaults standardUserDefaults])
+
+// X坐标
+#define KLineX(l) l*kRatioX6
+// Y坐标
+#define KLineY(l) l*kRatioY6
+
+
+//通知
+#define NotificationCenter ([NSNotificationCenter defaultCenter])
+
+
+#endif /* PrefixHeader_pch */
